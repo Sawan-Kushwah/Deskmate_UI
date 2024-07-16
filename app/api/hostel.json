@@ -1,0 +1,515 @@
+{
+  "floors": [
+    {
+      "floor_number": 1,
+      "rooms": [
+        {
+          "room_number": 101,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 3,
+              "availability": "unavailable"
+            }
+          ]
+        },
+        {
+          "room_number": 102,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 103,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            },
+            {
+              "bed_number": 3,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 104,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 105,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 106,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            },
+            {
+              "bed_number": 3,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 107,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 108,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 109,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 110,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 111,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 112,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 113,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 114,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 115,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 116,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 117,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 118,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 119,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 120,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "unavailable"
+            },
+            {
+              "bed_number": 2,
+              "availability": "unavailable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "floor_number": 2,
+      "rooms": [
+        {
+          "room_number": 201,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            },
+            {
+              "bed_number": 3,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 202,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "unavailable"
+            }
+          ]
+        },
+        {
+          "room_number": 203,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            },
+            {
+              "bed_number": 3,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 204,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 205,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            },
+            {
+              "bed_number": 3,
+              "availability": "available"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "floor_number": 3,
+      "rooms": [
+        {
+          "room_number": 301,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 302,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "unavailable"
+            }
+          ]
+        },
+        {
+          "room_number": 303,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 304,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            },
+            {
+              "bed_number": 3,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 305,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "floor_number": 4,
+      "rooms": [
+        {
+          "room_number": 401,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            },
+            {
+              "bed_number": 3,
+              "availability": "unavailable"
+            }
+          ]
+        },
+        {
+          "room_number": 402,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "vacating"
+            }
+          ]
+        },
+        {
+          "room_number": 403,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            },
+            {
+              "bed_number": 3,
+              "availability": "available"
+            }
+          ]
+        },
+        {
+          "room_number": 404,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "available"
+            },
+            {
+              "bed_number": 2,
+              "availability": "unavailable"
+            }
+          ]
+        },
+        {
+          "room_number": 405,
+          "beds": [
+            {
+              "bed_number": 1,
+              "availability": "vacating"
+            },
+            {
+              "bed_number": 2,
+              "availability": "available"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

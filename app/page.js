@@ -31,14 +31,27 @@ export default function Home() {
 
   //counting vacancy
   const [vacating, setVacating] = useState({});
+  const [vacancy, setvacancy] = useState(0);
+  const [aval, setaval] = useState(0);
+  const [occup, setoccup] = useState(0);
   useEffect(() => {
     const counts = {};
+    let a = 0;
+    let v = 0;
+    let o = 0;
     data.floors.forEach(floor => {
       let vacatingCount = 0;
       floor.rooms.forEach(room => {
         room.beds.forEach(bed => {
           if (bed.availability === "vacating") {
             vacatingCount++;
+            v++;
+          }
+          if (bed.availability === "available") {
+            a++;
+          }
+          if (bed.availability === "unavailable") {
+            o++;
           }
         });
       });
@@ -46,6 +59,9 @@ export default function Home() {
     });
 
     setVacating(counts);
+    setvacancy(v);
+    setoccup(o);
+    setaval(a);
   }, [data]);
 
   return (
@@ -67,7 +83,7 @@ export default function Home() {
         <div className="row w-4/5 bg-white border flex justify-around items-center mx-auto rounded-xl max-sm:w-full">
           <div className="totalBeds w-1/5 text-center py-6">
             <div className="value font-bold text-4xl py-2">
-              80
+              {vacancy + aval + occup}
             </div>
             <div className="text max-md:text-[10px]">
               Total Beds in PG
@@ -75,7 +91,7 @@ export default function Home() {
           </div>
           <div className="availableBeds w-1/5 text-center py-6" style={{ color: "#379017" }}>
             <div className="value font-bold text-4xl py-2">
-              15
+              {aval}
             </div>
             <div className="text max-md:text-[10px]">
               Total Available Beds
@@ -83,7 +99,7 @@ export default function Home() {
           </div>
           <div className="vacant w-1/5 text-center py-6" style={{ color: "#D89A3D" }}>
             <div className="value font-bold text-4xl py-2">
-              04
+              {vacancy}
             </div>
             <div className="text max-md:text-[10px]">
               Vacating in 60 days
@@ -91,7 +107,7 @@ export default function Home() {
           </div>
           <div className="occupied w-1/5 text-center py-6" style={{ color: "#FF4B4B" }}>
             <div className="value font-bold text-4xl py-2">
-              65
+              {occup}
             </div>
             <div className="text max-md:text-[10px]">
               Total Occupied Beds
@@ -106,12 +122,12 @@ export default function Home() {
               <>
                 <div className="container my-16 bg-white border w-4/5 mx-auto py-12 rounded-xl max-sm:w-full  max-sm:overflow-hidden max-sm:overflow-y-scroll" key={floor.floor_number}>
                   <div className="topButton flex justify-between items-center">
-                    <div className="floorNumber absolute bg-white ml-6 mb-14 rounded-lg cursor-pointer flex justify-center items-center" onClick={() => showMore(floor.floor_number - 1)}>
+                    <div className="floorNumber absolute bg-white ml-6 mb-24 rounded-lg cursor-pointer flex justify-center items-center" onClick={() => showMore(floor.floor_number - 1)}>
                       <h1 className="text-2xl font-bold px-8 py-4">Floor {floor.floor_number}</h1>
                       <img src="/frameIcons/arrow.png" alt="" className='w-6 mr-3 hidden max-sm:block arrowDown' />
                       <img src="/frameIcons/arrowUp.png" alt="" className='w-12 hidden arrowUp' />
                     </div>
-                    <div className="box absolute right-[12%] -mt-16 max-sm:right-[2%] bg-white rounded-lg p-3 flex justify-around items-center text-yellow-400 ">
+                    <div className="box absolute right-[12%] -mt-24 max-sm:right-[2%] bg-white rounded-lg p-3 flex justify-around items-center text-yellow-400 ">
                       <div className=" text-3xl font-bold">
                         {vacating[floor.floor_number]}
                       </div>
@@ -120,7 +136,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="tables flex max-sm:hidden justify-evenly max-md:flex-col floor-Details">
+                  <div className="tables flex max-sm:hidden max-md:flex-col floor-Details">
                     {floor.rooms &&
                       Array.from({ length: Math.ceil(floor.rooms.length / 5) }, (_, colIndex) => (
                         // Everytime i want new column to be inserted as room size increase more than 5 
